@@ -14,6 +14,6 @@ d= s.download()
 u = s.upload()
 ping = round(s.results.ping)
 
-print(f"Download speed:{bytes_to_mb(d):.2f} Mbps")
-print(f"Upload speed:{bytes_to_mb(u):.2f} Mbps")
+print(f"Download speed:{bytes_to_mb(d)/8:.2f} MBps")
+print(f"Upload speed:{bytes_to_mb(u)/8:.2f} MBps")
 print(f"Ping:{ping:.2f} Ms")
